@@ -28,7 +28,7 @@ const userSchema = mongoose.Schema({
         default: AuthRoles.USER
     },
     forgotPasswordToken: String,
-    forgotPasswordExpiry: String
+    forgotPasswordExpiry: Date,
 }, {
     timestamps: true
 })
