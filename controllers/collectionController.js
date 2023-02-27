@@ -73,7 +73,7 @@ export const deleteCollection = asyncHandler(async(req,res)=>{
 
 export const getAllCollection = asyncHandler(async(req,res)=>{
     const collections = await Collection.find()
-    
+
     if(!collections){
         throw new CustomError("Collection not found",400)
     }
@@ -84,3 +84,4 @@ export const getAllCollection = asyncHandler(async(req,res)=>{
         collections
     })
 })
+
